@@ -1,0 +1,168 @@
+body,
+.background,
+.background-image,
+.combine,
+.image,
+.image-div,
+.music-div,
+.music-icon,
+.payment-button,
+.span,
+.text-div,
+h1,
+h2,
+p,
+.p-2,
+h3 {
+  margin: 0;
+  font-family: Arial;
+}
+body {
+  background-image: url("pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 1100px 230px;
+  background-color: rgb(221, 247, 255);
+}
+.background {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.combine {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  
+}
+
+
+.image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.text-div {
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  
+  height: auto;
+  
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: rgb(11, 11, 83);
+
+}
+
+p {
+  color: rgb(156, 149, 255);
+  max-width: 200px;
+  font-size: 10px;
+  line-height: 16px;
+  padding-left: 25px;
+  
+}
+
+.music-div {
+  display: flex;
+  background-color: rgb(231, 234, 255);
+  max-width: 200px;
+  margin: 10px 20px;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+
+}
+.p-2 {
+  padding: 0;
+  max-width: 60px;
+  font-size: 9px;
+  line-height: 14px;
+  margin-right: 75px;
+}
+
+.music-icon {
+  height: 18px;
+
+}
+.span {
+  color: rgb(3, 3, 48);
+  font-weight: 700;
+}
+.span-1 {
+  
+}
+
+h2 {
+  font-size: 9px;
+  text-decoration: underline;
+  color: rgb(37, 37, 154);
+  font-weight: 700;
+}
+h2:hover {
+  cursor: pointer;
+}
+h2:active {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.payment-button {
+  background-color: rgb(37, 37, 154);
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 65px;
+  color: white;
+  font-size: 9px;
+  box-shadow: 0px 10px 5px rgba(164, 145, 234, 0.3);
+}
+.payment-button:hover {
+  cursor: pointer;
+}
+.payment-button:active {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+h3 {
+color: rgb(156, 149, 255);
+font-size: 9px;
+margin: 10px 0 20px;
+font-weight: 700;
+}
+h3:hover {
+  cursor: pointer;
+}
+h3:active {
+  cursor: pointer;
+  color: rgb(11, 11, 83);
+}
+
+@media (max-width: 481px) {
+  body {
+    background-image: url("pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+    background-color: rgb(221, 247, 255);
+  }
+
+  .combine {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    margin: 0;
+    
+  }
+}
